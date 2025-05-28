@@ -75,6 +75,7 @@ Route::group(['middleware' => ['checkInstaller']], function () {
         Route::post('register',  'register')->name('auth.register');
     });
 
+    
     //============== Forgot Password
 
     Route::group(['controller' => ForgotPasswordController::class], function () {
@@ -149,3 +150,14 @@ Route::controller(InstallerController::class)->group(
         Route::post('license', 'licenseVerify')->name('license.verify');
     }
 );
+
+// Connexion séparée par profil
+Route::get('login/student', function() { return view('theme::login\login-student'); })->name('login.student');
+Route::get('login/instructor', function() { return view('theme::login\login-instructor'); })->name('login.instructor');
+Route::get('login/organization', function() { return view('theme::login\login-organization'); })->name('login.organization');
+Route::get('login/administration', function() { return view('theme::login\login-admin'); })->name('login.admin');
+
+// Inscription séparée par profil
+Route::get('register/student', function() { return view('theme::register\register-student'); })->name('register.student');
+Route::get('register/instructor', function() { return view('theme::register\register-instructor'); })->name('register.instructor');
+Route::get('register/organization', function() { return view('theme::register\register-organization'); })->name('register.organization');

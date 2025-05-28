@@ -79,7 +79,7 @@
                     <button type="button" class="btn text-danger font-bold remove-cart"
                         data-id="{{ $cartCourse['id'] }}" aria-label="Remove course from list"
                         data-action="{{ route('remove.cart') }}">
-                        {{ translate('Remove') }}
+                        {{ translate('Supprimer') }}
                     </button>
                 </td>
             </tr>

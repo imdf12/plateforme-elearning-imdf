@@ -22,11 +22,11 @@
         <div class="grid grid-cols-12 gap-4 items-center">
             <div class="col-span-full md:col-span-7 xl:col-span-6 md:pr-20">
                 <div class="area-subtitle">
-                    {{ translate('Our Team Member') }}
+                    {{ translate('Notre équipe') }}
                 </div>
                 <h2 class="area-title mt-2">
-                    {{ translate('Meet Our Best') }}
-                    <span class="title-highlight-one"> {{ translate('Instructors') }} </span>
+                    {{ translate('Rencontrez nos meilleurs') }}
+                    <span class="title-highlight-one"> {{ translate('instructeurs') }} </span>
                 </h2>
             </div>
             @if ($instructorRoute && $instructorBtnText)

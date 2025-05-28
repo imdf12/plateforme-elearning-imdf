@@ -155,14 +155,14 @@
                             <li>
                                 <a href="{{ route('admin.profile') }}"
                                     class="flex font-medium px-4 py-2 hover:bg-gray-200 dark:hover:bg-dark-icon dark:hover:text-white">
-                                    {{ translate('My Profile') }}
+                                    {{ translate('Mon profil') }}
                                 </a>
                             </li>
                         @endif
                         <li>
                             <a href="{{ route('home.index') }}" target="_blank"
                                 class="flex font-medium px-4 py-2 hover:bg-gray-200 dark:hover:bg-dark-icon dark:hover:text-white">
-                                {{ translate('Visit Website') }}
+                                {{ translate('Visiter le site') }}
                             </a>
                         </li>
 
@@ -170,7 +170,7 @@
                             <li>
                                 <a href="{{ route('student.enroll.index') }}"
                                     class="flex font-medium px-4 py-2 hover:bg-gray-200 dark:hover:bg-dark-icon dark:hover:text-white">
-                                    {{ translate('My Course') }}
+                                    {{ translate('Mes cours') }}
                                 </a>
                             </li>
                         @endif
@@ -178,7 +178,7 @@
                             <li>
                                 <a href="{{ route('instructor.setting') }}"
                                     class="flex font-medium px-4 py-2 hover:bg-gray-200 dark:hover:bg-dark-icon dark:hover:text-white">
-                                    {{ translate('Setting') }}
+                                    {{ translate('Paramètres') }}
                                 </a>
                             </li>
                         @endif
@@ -186,7 +186,7 @@
                             <li>
                                 <a href="{{ route('organization.setting') }}"
                                     class="flex font-medium px-4 py-2 hover:bg-gray-200 dark:hover:bg-dark-icon dark:hover:text-white">
-                                    {{ translate('Setting') }}
+                                    {{ translate('Paramètres') }}
                                 </a>
                             </li>
                         @endif
@@ -196,7 +196,7 @@
                             class="flex font-medium px-4 py-2 text-sm text-gray-700 dark:text-dark-text hover:bg-gray-200 dark:hover:bg-dark-icon dark:hover:text-white"
                             onclick="event.preventDefault();
                             document.getElementById('header-logout-form').submit();">
-                            {{ translate('Log out') }}
+                            {{ translate('Déconnexion') }}
                         </a>
                         <form id="header-logout-form" action="{{ route('instructor.logout') }}" method="POST"
                             class="hidden">
@@ -208,7 +208,7 @@
                             class="flex font-medium px-4 py-2 text-sm text-gray-700 dark:text-dark-text hover:bg-gray-200 dark:hover:bg-dark-icon dark:hover:text-white"
                             onclick="event.preventDefault();
                             document.getElementById('header-logout-form').submit();">
-                            {{ translate('Log out') }}
+                            {{ translate('Déconnexion') }}
                         </a>
                         <form id="header-logout-form" action="{{ route('student.logout') }}" method="POST"
                             class="hidden">
@@ -220,7 +220,7 @@
                             class="flex font-medium px-4 py-2 text-sm text-gray-700 dark:text-dark-text hover:bg-gray-200 dark:hover:bg-dark-icon dark:hover:text-white"
                             onclick="event.preventDefault();
                             document.getElementById('header-logout-form').submit();">
-                            {{ translate('Log out') }}
+                            {{ translate('Déconnexion') }}
                         </a>
                         <form id="header-logout-form" action="{{ route('organization.logout') }}" method="POST"
                             class="hidden">
@@ -233,7 +233,7 @@
                             class="flex font-medium px-4 py-2 text-sm text-gray-700 dark:text-dark-text hover:bg-gray-200 dark:hover:bg-dark-icon dark:hover:text-white"
                             onclick="event.preventDefault();
                     document.getElementById('header-logout-form').submit();">
-                            {{ translate('Log out') }}
+                            {{ translate('Déconnexion') }}
                         </a>
                         <form id="header-logout-form" action="{{ route('admin.logout') }}" method="POST"
                             class="hidden">

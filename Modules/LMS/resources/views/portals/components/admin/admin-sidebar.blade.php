@@ -78,7 +78,7 @@
                         </div>
                     </li>
                 @endcan -->
-                <!-- @can('menu.localization')
+                @can('menu.localization')
                     <li
                         class="relative group/sm w-full group-data-[sidebar-size=sm]:hover:w-[calc(theme('spacing.app-menu-sm')_*_3.4)] group-data-[sidebar-size=sm]:flex-center">
                         <a href="#"
@@ -95,7 +95,7 @@
                             </span>
                             <span
                                 class="group-data-[sidebar-size=sm]:hidden group-data-[sidebar-size=sm]:ml-6 rtl:group-data-[sidebar-size=sm]:ml-0 rtl:group-data-[sidebar-size=sm]:mr-6 group-data-[sidebar-size=sm]:group-hover/sm:block ml-3 rtl:ml-0 rtl:mr-3 shrink-0">
-                                {{ translate('Localization Manage') }}
+                                {{ translate('Gestion des lieux') }}
                             </span>
                         </a>
                         <div
@@ -138,7 +138,7 @@
                         </div>
                     </li>
                 @endcan
-                @can('menu.icon.provider')
+                <!-- @can('menu.icon.provider')
                     <li
                         class="relative group/sm w-full group-data-[sidebar-size=sm]:hover:w-[calc(theme('spacing.app-menu-sm')_*_3.4)] group-data-[sidebar-size=sm]:flex-center">
                         <a href="#"
@@ -186,12 +186,12 @@
                             </span>
                             <span
                                 class="group-data-[sidebar-size=sm]:hidden group-data-[sidebar-size=sm]:ml-6 rtl:group-data-[sidebar-size=sm]:ml-0 rtl:group-data-[sidebar-size=sm]:mr-6 group-data-[sidebar-size=sm]:group-hover/sm:block ml-3 rtl:ml-0 rtl:mr-3 shrink-0">
-                                {{ translate('Category') }}
+                                {{ translate('Catégorie des cours') }}
                             </span>
                         </a>
                     </li>
                 @endcan
-                <!-- @can('menu.meeting')
+                @can('menu.meeting')
                     <li
                         class="relative group/sm w-full group-data-[sidebar-size=sm]:hover:w-[calc(theme('spacing.app-menu-sm')_*_3.4)] group-data-[sidebar-size=sm]:flex-center">
                         <a href="{{ route('meet-provider.index') }}" type="button"
@@ -235,9 +235,7 @@
                             </span>
                         </a>
                     </li>
-                @endcan -->
-
-
+                @endcan
 
                 @can('menu.course.manage')
                     <li
@@ -311,7 +309,7 @@
                         </div>
                     </li>
                 @endcan
-                <!-- @can('menu.enrollment')
+                @can('menu.enrollment')
                     <li
                         class="relative group/sm w-full group-data-[sidebar-size=sm]:hover:w-[calc(theme('spacing.app-menu-sm')_*_3.4)] group-data-[sidebar-size=sm]:flex-center">
                         <a href="#"
@@ -345,7 +343,7 @@
                             </ul>
                         </div>
                     </li>
-                @endcan -->
+                @endcan
                 <li
                     class="relative group/sm w-full group-data-[sidebar-size=sm]:hover:w-[calc(theme('spacing.app-menu-sm')_*_3.4)] group-data-[sidebar-size=sm]:flex-center">
                     <a href="#"
@@ -367,10 +365,10 @@
                         class="dropdown-content max-h-0 group-data-[sidebar-size=sm]:!max-h-max overflow-hidden group-data-[sidebar-size=sm]:overflow-visible hidden group-data-[sidebar-size=lg]:block peer-[.show]/dp-btn:my-1.5 group-data-[sidebar-size=sm]:!my-0 group-data-[sidebar-size=lg]:w-[calc(theme('spacing.app-menu')_-_16px)] group-data-[sidebar-size=sm]:w-[calc(theme('spacing.app-menu-sm')_*_2.5)] group-data-[sidebar-size=sm]:absolute group-data-[sidebar-size=sm]:left-[calc(theme('spacing.app-menu-sm')_*_0.9)] rtl:group-data-[sidebar-size=sm]:left-auto rtl:group-data-[sidebar-size=sm]:right-[calc(theme('spacing.app-menu-sm')_*_0.9)] top-full group-data-[sidebar-size=sm]:group-hover/sm:block group-data-[sidebar-size=sm]:bg-white dark:group-data-[sidebar-size=sm]:bg-dark-tooltip group-data-[sidebar-size=sm]:shadow-menu-dropdown transition-all duration-300">
                         <ul class="text-[14px] pl-1.5 group-data-[sidebar-size=sm]:pl-0">
                             <li class="relative group/sub">
-                                <a href="{{ route('organization.index') }}"
+                                <!-- <a href="{{ route('organization.index') }}"
                                     class="{{ is_active_menu('organization.*') ? 'active' : '' }} relative peer/link text-gray-500 dark:text-dark-text-two leading-none px-5 py-2.5 group-data-[sidebar-size=lg]:pl-8 rtl:group-data-[sidebar-size=lg]:pr-8 flex hover:text-primary-500 dark:hover:text-dark-text [&.active]:text-primary-500 dark:[&.active]:text-dark-text before:absolute before:top-[49%] before:-translate-y-1/2 before:left-4 rtl:before:left-auto rtl:before:right-4 before:size-1.5 before:rounded-50 before:border before:border-gray-400 dark:before:border-text-dark hover:before:border-none hover:before:bg-primary-400 dark:hover:before:bg-text-dark [&.active]:before:border-none group-data-[sidebar-size=sm]:after:block group-data-[sidebar-size=sm]:after:right-3 [&.active]:before:bg-primary-400 dark:[&.active]:before:bg-text-dark group-data-[sidebar-size=sm]:before:hidden ">
                                     {{ translate('Organization') }}
-                                </a>
+                                </a> -->
                                 <a href="{{ route('instructor.index') }}"
                                     class="{{ is_active_menu('instructor.*') ? 'active' : '' }} relative peer/link text-gray-500 dark:text-dark-text-two leading-none px-5 py-2.5 group-data-[sidebar-size=lg]:pl-8 rtl:group-data-[sidebar-size=lg]:pr-8 flex hover:text-primary-500 dark:hover:text-dark-text [&.active]:text-primary-500 dark:[&.active]:text-dark-text before:absolute before:top-[49%] before:-translate-y-1/2 before:left-4 rtl:before:left-auto rtl:before:right-4 before:size-1.5 before:rounded-50 before:border before:border-gray-400 dark:before:border-text-dark hover:before:border-none hover:before:bg-primary-400 dark:hover:before:bg-text-dark [&.active]:before:border-none group-data-[sidebar-size=sm]:after:block group-data-[sidebar-size=sm]:after:right-3 [&.active]:before:bg-primary-400 dark:[&.active]:before:bg-text-dark group-data-[sidebar-size=sm]:before:hidden ">
                                     {{ translate('Instructor') }}
@@ -384,7 +382,7 @@
                     </div>
                 </li>
 
-                <!-- @can('menu.review')
+                @can('menu.review')
                     <li
                         class="relative group/sm w-full group-data-[sidebar-size=sm]:hover:w-[calc(theme('spacing.app-menu-sm')_*_3.4)] group-data-[sidebar-size=sm]:flex-center">
                         <a href="{{ route('course-review.index') }}"
@@ -440,7 +438,7 @@
                     </li>
                 @endcan
 
-                @can('menu.financial')
+                <!-- @can('menu.financial')
                     <li
                         class=" relative group/sm w-full group-data-[sidebar-size=sm]:hover:w-[calc(theme('spacing.app-menu-sm')_*_3.4)] group-data-[sidebar-size=sm]:flex-center">
                         <a href="#"
@@ -491,7 +489,7 @@
                             </ul>
                         </div>
                     </li>
-                @endcan
+                @endcan -->
                 @can('menu.testimonial')
                     <li
                         class="relative group/sm w-full group-data-[sidebar-size=sm]:hover:w-[calc(theme('spacing.app-menu-sm')_*_3.4)] group-data-[sidebar-size=sm]:flex-center">
@@ -513,7 +511,7 @@
 
                     </li>
                 @endcan
-                @can('menu.emailtemplate')
+                <!-- @can('menu.emailtemplate')
                     <li
                         class="relative group/sm w-full group-data-[sidebar-size=sm]:hover:w-[calc(theme('spacing.app-menu-sm')_*_3.4)] group-data-[sidebar-size=sm]:flex-center">
                         <a href="{{ route('email-template.index') }}"
@@ -586,7 +584,7 @@
                             </ul>
                         </div>
                     </li>
-                @endcan
+                @endcan -->
                 @can('menu.contact')
                     <li
                         class="relative group/sm w-full group-data-[sidebar-size=sm]:hover:w-[calc(theme('spacing.app-menu-sm')_*_3.4)] group-data-[sidebar-size=sm]:flex-center">
@@ -637,7 +635,7 @@
                         </a>
                     </li>
                 @endcan
-                @can('menu.notification')
+                <!-- @can('menu.notification')
                     <li
                         class="relative group/sm w-full group-data-[sidebar-size=sm]:hover:w-[calc(theme('spacing.app-menu-sm')_*_3.4)] group-data-[sidebar-size=sm]:flex-center">
                         <a href="#"
@@ -673,8 +671,8 @@
                             </ul>
                         </div>
                     </li>
-                @endcan
-                @can('menu.support')
+                @endcan -->
+                <!-- @can('menu.support')
                     <li
                         class="relative group/sm w-full group-data-[sidebar-size=sm]:hover:w-[calc(theme('spacing.app-menu-sm')_*_3.4)] group-data-[sidebar-size=sm]:flex-center">
                         <a href="#"
@@ -713,8 +711,8 @@
                             </ul>
                         </div>
                     </li>
-                @endcan
-                @can('menu.staff')
+                @endcan -->
+                <!-- @can('menu.staff')
                     <li
                         class="relative group/sm w-full group-data-[sidebar-size=sm]:hover:w-[calc(theme('spacing.app-menu-sm')_*_3.4)] group-data-[sidebar-size=sm]:flex-center">
                         <a href="#"
@@ -779,7 +777,7 @@
                             </span>
                         </a>
                     </li>
-                @endcan
+                @endcan -->
                 @can('menu.certificate')
                     <li
                         class="relative group/sm w-full group-data-[sidebar-size=sm]:hover:w-[calc(theme('spacing.app-menu-sm')_*_3.4)] group-data-[sidebar-size=sm]:flex-center">
@@ -811,7 +809,7 @@
                         </a>
                     </li>
                 @endcan
-                @can('menu.faq')
+                <!-- @can('menu.faq')
                     <li
                         class="relative group/sm w-full group-data-[sidebar-size=sm]:hover:w-[calc(theme('spacing.app-menu-sm')_*_3.4)] group-data-[sidebar-size=sm]:flex-center">
                         <a href="{{ route('faq.index') }}"
@@ -834,28 +832,20 @@
                             </span>
                         </a>
                     </li>
-                @endcan
-                @can('menu.page')
+                @endcan -->
+                
+                @can('menu.setting')
                     <li
                         class="relative group/sm w-full group-data-[sidebar-size=sm]:hover:w-[calc(theme('spacing.app-menu-sm')_*_3.4)] group-data-[sidebar-size=sm]:flex-center">
-                        <a href="{{ route('page.index') }}"
-                            class="{{ is_active_menu('page.*') ? 'active' : '' }}  leading-none px-3.5 py-3 h-[42px] flex items-center rounded-md group-data-[sidebar-size=sm]:p-3 group-data-[sidebar-size=sm]:w-full text-gray-500 dark:text-dark-text-two hover:text-primary-500 dark:hover:text-white [&.active]:text-primary-500 dark:[&.active]:text-white group-data-[sidebar-size=sm]:border group-data-[sidebar-size=sm]:border-gray-200 dark:group-data-[sidebar-size=sm]:border-dark-border-four hover:!bg-primary-200 dark:hover:!bg-primary-500 [&.active]:bg-primary-200 dark:[&.active]:bg-primary-500 group-data-[sidebar-size=sm]:bg-white dark:group-data-[sidebar-size=sm]:bg-dark-card group-data-[sidebar-size=sm]:hover:bg-primary-500 group-data-[sidebar-size=sm]:[&.active]:bg-primary-200 dark:group-data-[sidebar-size=sm]:[&.active]:bg-primary-500 group/menu-link peer/dp-btn dk-theme-card-square ac-transition">
-                            <span
-                                class="shrink-0 group-data-[sidebar-size=sm]:w-[calc(theme('spacing.app-menu-sm')_*_0.43)] group-data-[sidebar-size=sm]:flex-center">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                                    viewBox="0 0 24 24">
-                                    <path fill="currentColor"
-                                        d="M3 19V5h18v14zm1-1h7.5V6H4zm8.5 0H20V6h-7.5zm-7.115-2.5h4.73v-1h-4.73zm0-3h4.73v-1h-4.73zm0-3h4.73v-1h-4.73zm8.5 6h4.73v-1h-4.73zm0-3h4.73v-1h-4.73zm0-3h4.73v-1h-4.73zM11.5 18V6z" />
-                                </svg>
-                            </span>
-                            <span
-                                class="group-data-[sidebar-size=sm]:hidden group-data-[sidebar-size=sm]:ml-6 rtl:group-data-[sidebar-size=sm]:ml-0 rtl:group-data-[sidebar-size=sm]:mr-6 group-data-[sidebar-size=sm]:group-hover/sm:block ml-3 rtl:ml-0 rtl:mr-3 shrink-0">
-                                {{ translate('Page Manage') }}
-                            </span>
-                        </a>
+                        @can('menu.site-setting')
+                            <a href="{{ route('site.language') }}"
+                                class="relative peer/link text-gray-500 dark:text-dark-text-two leading-none px-5 py-2.5 group-data-[sidebar-size=lg]:pl-8 rtl:group-data-[sidebar-size=lg]:pr-8 flex hover:text-primary-500 dark:hover:text-dark-text [&.active]:text-primary-500 dark:[&.active]:text-dark-text before:absolute before:top-[49%] before:-translate-y-1/2 before:left-4 rtl:before:left-auto rtl:before:right-4 before:size-1.5 before:rounded-50 before:border before:border-gray-400 dark:before:border-text-dark hover:before:border-none hover:before:bg-primary-400 dark:hover:before:bg-text-dark [&.active]:before:border-none group-data-[sidebar-size=sm]:after:block group-data-[sidebar-size=sm]:after:right-3 [&.active]:before:bg-primary-400 dark:[&.active]:before:bg-text-dark group-data-[sidebar-size=sm]:before:hidden {{ is_active_menu(['site.language'], ['site.language.*']) ? 'active' : '' }}">
+                                {{ translate('Site Language') }}
+                            </a>
+                        @endcan
                     </li>
                 @endcan
-                @can('menu.setting')
+                <!-- @can('menu.setting')
                     <li
                         class="relative group/sm w-full group-data-[sidebar-size=sm]:hover:w-[calc(theme('spacing.app-menu-sm')_*_3.4)] group-data-[sidebar-size=sm]:flex-center">
                         <a href="#"
@@ -900,8 +890,8 @@
                             </ul>
                         </div>
                     </li>
-                @endcan
-                @can('menu.license')
+                @endcan -->
+                <!-- @can('menu.license')
                     <li
                         class="relative group/sm w-full group-data-[sidebar-size=sm]:hover:w-[calc(theme('spacing.app-menu-sm')_*_3.4)] group-data-[sidebar-size=sm]:flex-center">
                         <a href="{{ route('license.remove.index') }}"

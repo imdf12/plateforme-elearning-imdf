@@ -74,7 +74,7 @@
         <div class="py-5 border-t border-gray-200 dark:border-dark-border text-left">
             <div class="flex-center-between">
                 <h6 class="text-gray-500 dark:text-dark-text leading-none font-semibold">
-                    {{ translate('About') }}
+                    {{ translate('A Propos') }}
                 </h6>
             </div>
             <ul
@@ -82,7 +82,7 @@
                 <li class="items-center">
                     <div class="flex items-center gap-1">
                         <i class="ri-home-2-line text-inherit"></i>
-                        {{ translate('Lives in') }}:
+                        {{ translate('Habite à') }}:
                     </div>
                     <span class="text-heading dark:!text-dark-text">{{ $userInfo->location ?? '' }}</span>
                 </li>
@@ -91,7 +91,7 @@
         <div class="py-5 border-t border-gray-200 dark:border-dark-border text-left">
             <div class="flex-center-between">
                 <h6 class="text-gray-500 dark:text-dark-text leading-none font-semibold">
-                    {{ translate('Basic Info') }}
+                    {{ translate('Informations de base') }}
                 </h6>
             </div>
             <ul

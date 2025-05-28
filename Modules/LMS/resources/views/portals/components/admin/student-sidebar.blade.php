@@ -21,7 +21,7 @@
                         </span>
                         <span
                             class="group-data-[sidebar-size=sm]:hidden group-data-[sidebar-size=sm]:ml-6 rtl:group-data-[sidebar-size=sm]:ml-0 rtl:group-data-[sidebar-size=sm]:mr-6 group-data-[sidebar-size=sm]:group-hover/sm:block ml-3 rtl:ml-0 rtl:mr-3 shrink-0">
-                            {{ translate('Dashboard') }}
+                            {{ translate('Tableau de bord') }}
                         </span>
                     </a>
                 </li>
@@ -38,7 +38,7 @@
                         </span>
                         <span
                             class="group-data-[sidebar-size=sm]:hidden group-data-[sidebar-size=sm]:ml-6 rtl:group-data-[sidebar-size=sm]:ml-0 rtl:group-data-[sidebar-size=sm]:mr-6 group-data-[sidebar-size=sm]:group-hover/sm:block ml-3 rtl:ml-0 rtl:mr-3 shrink-0">
-                            {{ translate('Course Manage') }}
+                            {{ translate('Gestion des cours') }}
                         </span>
                     </a>
                     <div
@@ -48,19 +48,19 @@
                             <li class="relative group/sub">
                                 <a href="{{ route('student.enroll.index') }}"
                                     class="relative peer/link text-gray-500 dark:text-dark-text-two leading-none px-5 py-2.5 group-data-[sidebar-size=lg]:pl-8 rtl:group-data-[sidebar-size=lg]:pr-8 flex hover:text-primary-500 dark:hover:text-dark-text [&.active]:text-primary-500 dark:[&.active]:text-dark-text before:absolute before:top-[49%] before:-translate-y-1/2 before:left-4 rtl:before:left-auto rtl:before:right-4 before:size-1.5 before:rounded-50 before:border before:border-gray-400 dark:before:border-text-dark hover:before:border-none hover:before:bg-primary-400 dark:hover:before:bg-text-dark [&.active]:before:border-none group-data-[sidebar-size=sm]:after:block group-data-[sidebar-size=sm]:after:right-3 [&.active]:before:bg-primary-400 dark:[&.active]:before:bg-text-dark group-data-[sidebar-size=sm]:before:hidden {{ request()->routeIs('student.enroll.index') ? 'active' : '' }}">
-                                    {{ translate('My Enrolled') }}
+                                    {{ translate('Mes inscriptions') }}
                                 </a>
                             </li>
                             <li class="relative group/sub">
                                 <a href="{{ route('student.purchase.index') }}"
                                     class="relative peer/link text-gray-500 dark:text-dark-text-two leading-none px-5 py-2.5 group-data-[sidebar-size=lg]:pl-8 rtl:group-data-[sidebar-size=lg]:pr-8 flex hover:text-primary-500 dark:hover:text-dark-text [&.active]:text-primary-500 dark:[&.active]:text-dark-text before:absolute before:top-[49%] before:-translate-y-1/2 before:left-4 rtl:before:left-auto rtl:before:right-4 before:size-1.5 before:rounded-50 before:border before:border-gray-400 dark:before:border-text-dark hover:before:border-none hover:before:bg-primary-400 dark:hover:before:bg-text-dark [&.active]:before:border-none group-data-[sidebar-size=sm]:after:block group-data-[sidebar-size=sm]:after:right-3 [&.active]:before:bg-primary-400 dark:[&.active]:before:bg-text-dark group-data-[sidebar-size=sm]:before:hidden {{ request()->routeIs('student.purchase.index') ? 'active' : '' }}">
-                                    {{ translate('Course Purchase') }}
+                                    {{ translate('Achats de cours') }}
                                 </a>
                             </li>
                             <li class="relative group/sub">
                                 <a href="{{ route('student.bundle.index') }}"
                                     class="relative peer/link text-gray-500 dark:text-dark-text-two leading-none px-5 py-2.5 group-data-[sidebar-size=lg]:pl-8 rtl:group-data-[sidebar-size=lg]:pr-8 flex hover:text-primary-500 dark:hover:text-dark-text [&.active]:text-primary-500 dark:[&.active]:text-dark-text before:absolute before:top-[49%] before:-translate-y-1/2 before:left-4 rtl:before:left-auto rtl:before:right-4 before:size-1.5 before:rounded-50 before:border before:border-gray-400 dark:before:border-text-dark hover:before:border-none hover:before:bg-primary-400 dark:hover:before:bg-text-dark [&.active]:before:border-none group-data-[sidebar-size=sm]:after:block group-data-[sidebar-size=sm]:after:right-3 [&.active]:before:bg-primary-400 dark:[&.active]:before:bg-text-dark group-data-[sidebar-size=sm]:before:hidden {{ request()->routeIs('student.bundle.index') ? 'active' : '' }}">
-                                    {{ translate('Bundle Purchase') }}
+                                    {{ translate('Achat de packs') }}
                                 </a>
                             </li>
                         </ul>
@@ -90,7 +90,7 @@
                         </span>
                         <span
                             class="group-data-[sidebar-size=sm]:hidden group-data-[sidebar-size=sm]:ml-6 rtl:group-data-[sidebar-size=sm]:ml-0 rtl:group-data-[sidebar-size=sm]:mr-6 group-data-[sidebar-size=sm]:group-hover/sm:block ml-3 rtl:ml-0 rtl:mr-3 shrink-0">
-                            {{ translate('Certificate') }}
+                            {{ translate('Certificats') }}
                         </span>
                     </a>
                 </li>
@@ -108,7 +108,7 @@
                         </span>
                         <span
                             class="group-data-[sidebar-size=sm]:hidden group-data-[sidebar-size=sm]:ml-6 rtl:group-data-[sidebar-size=sm]:ml-0 rtl:group-data-[sidebar-size=sm]:mr-6 group-data-[sidebar-size=sm]:group-hover/sm:block ml-3 rtl:ml-0 rtl:mr-3 shrink-0">
-                            {{ translate('Quizzes') }}
+                            {{ translate('Quiz') }}
                         </span>
                     </a>
                     <div
@@ -118,7 +118,7 @@
                             <li class="relative group/sub">
                                 <a href="{{ route('student.quiz.result') }}"
                                     class="relative peer/link text-gray-500 dark:text-dark-text-two leading-none px-5 py-2.5 group-data-[sidebar-size=lg]:pl-8 rtl:group-data-[sidebar-size=lg]:pr-8 flex hover:text-primary-500 dark:hover:text-dark-text [&.active]:text-primary-500 dark:[&.active]:text-dark-text before:absolute before:top-[49%] before:-translate-y-1/2 before:left-4 rtl:before:left-auto rtl:before:right-4 before:size-1.5 before:rounded-50 before:border before:border-gray-400 dark:before:border-text-dark hover:before:border-none hover:before:bg-primary-400 dark:hover:before:bg-text-dark [&.active]:before:border-none group-data-[sidebar-size=sm]:after:block group-data-[sidebar-size=sm]:after:right-3 [&.active]:before:bg-primary-400 dark:[&.active]:before:bg-text-dark group-data-[sidebar-size=sm]:before:hidden {{ request()->routeIs('student.quiz.result') ? 'active' : '' }}">
-                                    {{ translate('My Result') }}
+                                    {{ translate('Mes résultats') }}
                                 </a>
                             </li>
 
@@ -138,7 +138,7 @@
                         </span>
                         <span
                             class="group-data-[sidebar-size=sm]:hidden group-data-[sidebar-size=sm]:ml-6 rtl:group-data-[sidebar-size=sm]:ml-0 rtl:group-data-[sidebar-size=sm]:mr-6 group-data-[sidebar-size=sm]:group-hover/sm:block ml-3 rtl:ml-0 rtl:mr-3 shrink-0">
-                            {{ translate('Assignment') }}
+                            {{ translate('Devoirs') }}
                         </span>
                     </a>
                 </li>

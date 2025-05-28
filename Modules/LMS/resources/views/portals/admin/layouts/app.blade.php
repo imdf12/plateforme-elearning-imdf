@@ -9,7 +9,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>{{ isset($backendSetting['app_name']) ? $backendSetting['app_name'] . ' -' : null }} {{ $title ?? null }}</title>
     <meta name="robots" content="noindex, follow">
-    <meta name="description" content="web development agency">
+    <meta name="description" content="Plateforme d'apprentissage de l'Institut des Metiers du Digital et du Freelancing">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="csrf-token" id="csrf-token" content="{{ csrf_token() }}">
     @php

@@ -40,11 +40,11 @@
             <i class="ri-home-office-fill text-2xl"></i>
         </div>
         <div class="area-title text-2xl !leading-none mt-5">
-            {{ translate('Office Hour') }}
+            {{ translate('Horaire de bureau') }}
         </div>
         <p class="area-description text-sm mt-4"> {{ $general['office_hours'] ?? '' }} </p>
         @if (isset($general['support_hours']))
-            <p class="area-description text-sm mt-1"> {{ translate('Online') }} {{ $general['support_hours'] ?? '' }}
+            <p class="area-description text-sm mt-1"> {{ translate('En ligne') }} {{ $general['support_hours'] ?? '' }}
             </p>
         @endif
     </div>
@@ -56,10 +56,10 @@
             <i class="ri-map-pin-fill text-2xl"></i>
         </div>
         <div class="area-title text-2xl !leading-none mt-5">
-            {{ translate('Location') }}
+            {{ translate('Localisation') }}
         </div>
         <p class="area-description text-sm mt-4">
-            {{ $general['address'] ?? null }}
+            {{ $general['adresse'] ?? null }}
         </p>
     </div>
 </div>

@@ -15,7 +15,7 @@
                 <input type="text" id="user-first-name" name="name"
                     class="form-input rounded-full peer  {{ $inputClass }}" placeholder="" />
                 <label for="user-first-name" class="form-label floating-form-label">
-                    {{ translate('Full Name') }}
+                    {{ translate('Nom complet') }}
                     <span class="text-danger">*</span>
                 </label>
             </div>
@@ -50,7 +50,7 @@
                 <input type="text" id="user-address" class="form-input rounded-full peer {{ $inputClass }}"
                     name="subject" placeholder="" />
                 <label for="user-address" class="form-label floating-form-label">
-                    {{ translate('Subject') }}
+                    {{ translate('Sujet') }}
                     <span class="text-danger">*</span>
                 </label>
             </div>
@@ -61,7 +61,7 @@
                 <textarea id="user-education" rows="10" class="form-input rounded-2xl h-auto peer !bg-white" name="message"
                     placeholder=""></textarea>
                 <label for="user-education" class="form-label floating-form-label">
-                    {{ translate(Ecrire un message') }}
+                    {{ translate('Ecrire un message') }}
                     <span class="text-danger">*</span>
                 </label>
             </div>
@@ -69,8 +69,8 @@
         </div>
         <div class="col-span-full">
             <button type="submit" class="btn b-solid btn-primary-solid btn-xl h-12 !rounded-full"
-                aria-label="Send now">
-                {{ translate('Send Now') }}
+                aria-label="Envoyer maintenant">
+                {{ translate('Envoyer maintenant') }}
                 <span class="hidden md:block">
                     <i class="ri-arrow-right-up-line text-[20px] rtl:before:content-['\ea66']"></i>
                 </span>

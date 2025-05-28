@@ -59,7 +59,7 @@
                     <div
                         class="flex-center-between p-6 cursor-pointer lms-accordion-button panel-show group/accordion peer/accordion">
                         <h6 class="area-title text-xl !leading-none">
-                            {{ translate('Time Zones') }}
+                            {{ translate('Fuseaux horaires') }}
                         </h6>
                         <span class="group-[.panel-show]/accordion:-rotate-180">
                             <i class="ri-arrow-down-s-line"></i>
@@ -88,7 +88,7 @@
                     <div
                         class="flex-center-between p-6 cursor-pointer lms-accordion-button panel-show group/accordion peer/accordion">
                         <h6 class="area-title text-xl !leading-none">
-                            {{ translate('Language') }}
+                            {{ translate('Langues') }}
                         </h6>
                         <span class="group-[.panel-show]/accordion:-rotate-180">
                             <i class="ri-arrow-down-s-line"></i>

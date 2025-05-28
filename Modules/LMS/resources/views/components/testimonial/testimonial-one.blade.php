@@ -10,12 +10,12 @@
         <div class="grid grid-cols-12 gap-4 items-center">
             <div class="col-span-full text-center max-w-[594px] mx-auto">
                 <div class="area-subtitle">
-                    {{ translate('Testimonials') }}
+                    {{ translate('Avis') }}
                 </div>
                 <h2 class="area-title mt-2">
-                    {{ translate('Edulab Received More than') }}
+                    {{ translate('Nous avons reçu plus de') }}
                     <span class="title-highlight-one">{{ $totalTestimonials }}</span>
-                    {{ translate('Reviews') }}
+                    {{ translate('avis') }}
                 </h2>
             </div>
         </div>

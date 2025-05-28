@@ -97,17 +97,17 @@
                 {{ auth('admin')->user()->name }}
             </a>
         @elseif ($login['is_show'] ?? true)
-            <a href="{{ $login['url'] ?? route('login') }}" aria-label="Log in"
+            <a href="{{ route('login.student') }}" aria-label="Connexion étudiant"
                 class="{{ $login['link_class'] ?? 'flex btn b-outline btn-secondary-outline h-11 !rounded-full !text-heading font-semibold' }}">
                 <span class="hidden md:block"><i class="ri-user-3-line"></i></span>
-                {{ translate($login['label'] ?? 'Log In') }}
+                {{ __('Connexion') }}
             </a>
         @endif
     @endauth
     @if (!Auth::guard('admin')->check() && !Auth::guard('web')->check() && ($register['is_show'] ?? true))
-        <a href="{{ $register['url'] ?? route('auth.register') }}" aria-label="Registration"
+        <a href="{{ route('register.student') }}" aria-label="Inscription étudiant"
             class="{{ $register['link_class'] ?? 'hidden md:flex btn b-solid btn-secondary-solid h-11 !rounded-full !text-heading font-semibold' }}">
-            {{ translate($register['label'] ?? 'Sign up') }}
+            {{ __('Inscription') }}
             @if ($register['show_icon'] ?? true)
                 <span class="hidden md:block">
                     <i class="{{ $register['link_icon'] ?? 'ri-arrow-right-up-line' }}"></i>

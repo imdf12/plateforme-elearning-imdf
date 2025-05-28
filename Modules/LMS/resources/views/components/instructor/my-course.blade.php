@@ -4,12 +4,12 @@
         <div class="grid grid-cols-12 gap-4 items-center">
             <div class="col-span-full text-center max-w-[594px] mx-auto">
                 <div class="area-subtitle">
-                    {{ translate('Popular Courses') }}
+                    {{ translate('Cours populaires') }}
                 </div>
                 <h2 class="area-title mt-2">
-                    {{ translate('Explore My') }}
+                    {{ translate('Explorez mes') }}
                     <span class="title-highlight-one">
-                        {{ translate('Courses') }}
+                        {{ translate('cours') }}
                     </span>
                 </h2>
             </div>

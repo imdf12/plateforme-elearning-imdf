@@ -1,7 +1,7 @@
 @php
     $languages = get_all_language();
 @endphp
-<div id="ai-content-modal-btn-wrapper" class="fixed top-1/4 right-0 rtl:right-auto rtl:left-0 translate-x-[98px] rtl:-translate-x-[98px] hover:translate-x-0 z-backdrop duration-200">
+<!-- <div id="ai-content-modal-btn-wrapper" class="fixed top-1/4 right-0 rtl:right-auto rtl:left-0 translate-x-[98px] rtl:-translate-x-[98px] hover:translate-x-0 z-backdrop duration-200">
     <button type="button" class="ai-content-modal-btn flex-center gap-3.5 bg-primary text-white duration-300 rounded-l-lg rtl:rounded-l-none rtl:rounded-r-lg shadow-md" aria-label="Bouton de génération de contenu IA">
         <span class="flex-center pl-3.5 py-2">
             <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 512 512">
@@ -10,7 +10,7 @@
         </span>
         <span id="ai-content-modal-btn-dragger" class="flex-center pr-3.5 py-2 cursor-move">{{ translate('Contenu IA') }}</span>
     </button>
-</div>
+</div> -->
 <div id="ai-modal-generate" data-visibility="false" class="w-full max-w-screen-md bg-white dark:bg-dark-card-shade rounded-lg !fixed top-0 right-0 z-modal duration-300 shadow-[0_0_10px_1px_rgba(0,0,0,0.75)] data-[visibility=true]:visible data-[visibility=true]:opacity-100 data-[visibility=true]:block data-[visibility=false]:invisible data-[visibility=false]:opacity-0 data-[visibility=false]:hidden">
     <div class="">
         <!-- En-tête de la modale -->
