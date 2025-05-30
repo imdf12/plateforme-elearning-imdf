@@ -152,12 +152,23 @@ Route::controller(InstallerController::class)->group(
 );
 
 // Connexion séparée par profil
-Route::get('login/student', function() { return view('theme::login\login-student'); })->name('login.student');
-Route::get('login/instructor', function() { return view('theme::login\login-instructor'); })->name('login.instructor');
-Route::get('login/organization', function() { return view('theme::login\login-organization'); })->name('login.organization');
-Route::get('login/administration', function() { return view('theme::login\login-admin'); })->name('login.admin');
+Route::get('login/student', function() { return view('theme::login.login-student'); })->name('login.student');
+Route::get('login/instructor', function() { return view('theme::login.login-instructor'); })->name('login.instructor');
+Route::get('login/organization', function() { return view('theme::login.login-organization'); })->name('login.organization');
+Route::get('login/administration', function() { return view('theme::login.login-admin'); })->name('login.admin');
 
 // Inscription séparée par profil
-Route::get('register/student', function() { return view('theme::register\register-student'); })->name('register.student');
-Route::get('register/instructor', function() { return view('theme::register\register-instructor'); })->name('register.instructor');
-Route::get('register/organization', function() { return view('theme::register\register-organization'); })->name('register.organization');
+Route::get('register/student', function() { return view('theme::register.register-student'); })->name('register.student');
+Route::get('register/instructor', function() { return view('theme::register.register-instructor'); })->name('register.instructor');
+Route::get('register/organization', function() { return view('theme::register.register-organization'); })->name('register.organization');
+
+// Page Recrutement
+Route::get('recrutement', function() {
+    // Vous pouvez passer des données à la vue si nécessaire
+    $page_data = [
+        'title' => translate('Recrutement - Rejoignez Notre Équipe'),
+        'description' => translate('Découvrez nos opportunités de carrière et postulez pour rejoindre une équipe dynamique et innovante.'),
+        // Ajoutez d'autres meta tags ou données spécifiques à la page ici
+    ];
+    return view('theme::recruitment.index', compact('page_data'));
+})->name('recruitment.page');

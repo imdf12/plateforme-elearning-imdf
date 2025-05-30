@@ -1908,7 +1908,7 @@ if (!function_exists('get_menus')) {
 
         $menus = array_merge($menus, [
             'home' => [
-                'name' => translate('Home'),
+                'name' => translate('Accueil'),
                 'url' => route('home.index'),
                 'is_active' => is_active('home.index'),
                 'childs' => [],
@@ -1918,52 +1918,25 @@ if (!function_exists('get_menus')) {
                 'url' => route('course.list'),
                 'is_active' => is_active('course.list')
             ],
-            'course_bundle' => [
-                'name' => translate('Pages'),
-                'url' => '#',
-                'is_active' => is_active('course.bundle') || is_active('instructor.list') || is_active('organization.list'),
-                'childs' => [
-                    [
-                        'name' => translate('Course Bundle'),
-                        'url' => route('bundle.list'),
-                        'is_active' => is_active('bundle.list'),
-                    ],
-                    [
-                        'name' => translate('Instructor'),
-                        'url' => route('instructor.list'),
-                        'is_active' => is_active('instructor.list'),
-                    ],
-                    [
-                        'name' => translate('Organization'),
-                        'url' => route('organization.list'),
-                        'is_active' => is_active('organization.list'),
-
-                    ],
-                    [
-                        'name' => translate('Blogs'),
-                        'url' => route('blog.list'),
-                        'is_active' => is_active('blog.list'),
-
-                    ],
-                    [
-                        'name' => translate('About Us'),
-                        'url' => route('about.us'),
-                        'is_active' => is_active('about.us'),
-
-                    ],
-                    [
-                        'name' => translate('Privacy & Policy'),
-                        'url' => route('privacy.policy'),
-                        'is_active' => is_active('privacy.policy'),
-
-                    ],
-                    [
-                        'name' => translate('Terms & Condition'),
-                        'url' => route('terms.condition'),
-                        'is_active' => is_active('terms.condition'),
-
-                    ],
-                ]
+            'instructor_list' => [
+                'name' => translate('Instructor'),
+                'url' => route('instructor.list'),
+                'is_active' => is_active('instructor.list'),
+            ],
+            'blog_list' => [
+                'name' => translate('Blog'),
+                'url' => route('blog.list'),
+                'is_active' => is_active('blog.list'),
+            ],
+            'recruitment' => [
+                'name' => translate('Recrutement'),
+                'url' => route('recruitment.page'),
+                'is_active' => is_active('recruitment.page'),
+            ],
+            'about_us' => [
+                'name' => translate('About Us'),
+                'url' => route('about.us'),
+                'is_active' => is_active('about.us'),
             ],
             'contact' => [
                 'name' => translate('Contact'),
