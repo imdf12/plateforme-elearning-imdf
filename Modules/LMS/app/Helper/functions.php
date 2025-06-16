@@ -1933,11 +1933,11 @@ if (!function_exists('get_menus')) {
                 'url' => route('recruitment.page'),
                 'is_active' => is_active('recruitment.page'),
             ],
-            'about_us' => [
-                'name' => translate('About Us'),
-                'url' => route('about.us'),
-                'is_active' => is_active('about.us'),
-            ],
+            // 'about_us' => [
+            //     'name' => translate('About Us'),
+            //     'url' => route('about.us'),
+            //     'is_active' => is_active('about.us'),
+            // ],
             'contact' => [
                 'name' => translate('Contact'),
                 'url' => route('contact.page'),
